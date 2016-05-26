@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>{{ title }} - Freeride</title>
+      <style>
+        .wrapper{
+            width:100%;
+            background:#333;
+            height:100%;
+            padding-top:100px;
+        }
+          .container{
+              text-align: center;
+              padding:30px;
+              background:#f3f3f3;  width:600px;
+            margin:0 auto;
+            border:1px solid #ccc;
+            box-shadow:1px 1px 1px rgba(0,0,0,0.2);
+          }
+      </style>
+  </head>
+  <body>
+  <div class="wrapper">
+      <div class="container">
+           <h1>Hoi {{ user.nickname }}, Wil je op reis!</h1>
+  <p>Je hebt een afsraak om {{ end_time }} op {{ end_location }}</p>
+  <p>Wil je een reis boeken? De reis tijd is vanaf je huidige locatie {{ location }}: {{ travel_time }}.</p>
+  <button>Boek nu &raquo;</button>
+      </div>
+  </div>
+
+  </body>
+</html>
